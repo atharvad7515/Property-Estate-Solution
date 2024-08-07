@@ -1,16 +1,16 @@
-import "@/assets/styles/globals.css";
+// import "@/assets/styles/globals.css";
 
-export const metadata = {
-  title: "Property-pulse",
-  keywords: "rental , property , real estate",
-  description: "find perfect rental property",
-};
+// export const metadata = {
+//   title: "Property-pulse",
+//   keywords: "rental , property , real estate",
+//   description: "find perfect rental property",
+// };
 
 const MainLayout = ({ children }) => {
   return (
     <html>
       <body>
-        <main>Main layout {children}</main>
+        <main> hi {children}</main>
       </body>
     </html>
   );
