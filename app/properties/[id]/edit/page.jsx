@@ -7,7 +7,8 @@ import BookmarkButton from "@/components/BookmarkButton";
 import ShareButtons from "@/components/ShareButtons";
 // import odfjaosd from " ml;mdnkfoasd";
 import PropertyContactForm from "@/components/PropertyContactForm";
-import { convertToSerializeableObject } from "@/utils/convertToObject";
+import { convertToSerializableObject } from "@/utils/convertToObject";
+
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
