@@ -7,8 +7,8 @@ import { FaArrowLeft } from "react-icons/fa";
 import PropertyDetails from "@/components/PropertyDetails";
 import { convertToSerializableObject } from "@/utils/convertToObject";
 import PropertyContactgForm from "@/components/PropertyContactForm";
-import ShareButtons from "@/components/ShareButton";
-import BookmarkButton from "@/components/BookMarkButton";
+import ShareButtons from "@/components/ShareButtons";
+import BookmarkButton from "@/components/BookmarkButton";
 
 const property_page = async ({ params }) => {
   console.log("hi params are here :- ");
