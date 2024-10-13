@@ -7,7 +7,7 @@ const AddPropertyPage = () => {
         <div className="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg border m-4 md:m-0">
           <PropertyAddForm />
         </div>
-        hi bro
+        Adding Property ...
       </div>
     </section>
   );
