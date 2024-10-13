@@ -12,7 +12,7 @@ import { convertToSerializableObject } from "@/utils/convertToObject";
 const profilePage = async () => {
   await connectDB();
 
-  const sessionUser = (await getSessionUser()) || {};
+  const sessionUser = await getSessionUser()) || {};
 
   const { userId } = sessionUser;
 
