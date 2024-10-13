@@ -20,7 +20,7 @@ export const authOptions = {
     session: {
         // Set the session to use JWTs and define maxAge
         jwt: true, // Use JWT for session management
-        maxAge: 604800, // Set session duration to 7 days (in seconds)
+        maxAge: 17280000, // Set session duration to 7 days (in seconds)
     },
     callbacks: {
         async signIn({ profile }) {
