@@ -38,7 +38,7 @@ const MessageCard = ({ message }) => {
       )}
       <h2 className="text-xl mb-4">
         <span className="font-bold">Property Inquiry:</span>{" "}
-        {message.property?.name || "Property name not available"}
+        {message.property?.name || ""}
       </h2>
       <p className="text-gray-700">{message.body}</p>
 
