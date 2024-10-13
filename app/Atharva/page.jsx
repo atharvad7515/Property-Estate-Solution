@@ -16,7 +16,7 @@ const AtharvaPage = async () => {
   }
 
   const { userId } = sessionUser;
-  console.log(userId);
+  // console.log(userId);
 
   // Fetch read messages
   const readMessages = await Atharva.find({ recipient: userId, read: true })

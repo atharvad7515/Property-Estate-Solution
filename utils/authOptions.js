@@ -42,14 +42,14 @@ export const authOptions = {
             return true; // Allow sign-in by default
         },
         async session({ session }) {
-            console.log("Session callback triggered");
+            // console.log("Session callback triggered");
 
             const user = await User.findOne({ email: session.user.email });
-            console.log("User from DB:", user);
+            // console.log("User from DB:", user);
 
             if (user) {
                 session.user.userId = user._id.toString();
-                console.log("Assigned userId:", session.user.userId);
+                // console.log("Assigned userId:", session.user.userId);
             } else {
                 console.error("User not found in database");
             }

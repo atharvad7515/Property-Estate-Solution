@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const PropertyHeaderImage = ({ image }) => {
-  console.log("Image path:", image);
+  // console.log("Image path:", image);
 
   return (
     <section>

@@ -11,8 +11,8 @@ import ShareButtons from "@/components/ShareButtons";
 import BookmarkButton from "@/components/BookmarkButton";
 
 const property_page = async ({ params }) => {
-  console.log("hi params are here :- ");
-  console.log(params); // Debugging: Check if `params.id` is correctly passed
+  // console.log("hi params are here :- ");
+  // console.log(params); // Debugging: Check if `params.id` is correctly passed
   await connectDB();
 
   if (!params.id) {
@@ -65,7 +65,7 @@ const property_page = async ({ params }) => {
     console.error("Error fetching property:", error);
     return <div>Error loading property d ata</div>;
   }
-  console.log("Fetched property:", property);
+  // console.log("Fetched property:", property);
 };
 
 export default property_page;

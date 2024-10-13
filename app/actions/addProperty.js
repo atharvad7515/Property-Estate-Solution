@@ -17,12 +17,12 @@ async function addProperty(formData) {
     }
 
     const { userId } = sessionUser;
-    console.log(userId);
+    // console.log(userId);
 
     // Access all values for amenities and images
     const amenities = formData.getAll("amenities");
     const images = formData.getAll("images").filter((image) => image.name !== ""); //getting rid of map   
-    console.log('Images received:', images);
+    // console.log('Images received:', images);
     // const imageUrls = [];
     // Upload images and get URLs
     // console.log("Property ID:", params.id);
@@ -54,7 +54,7 @@ async function addProperty(formData) {
         },
         owner: userId,
     };
-    console.log(formData);
+    // console.log(formData);
 
     const imageUrls = [];
 
@@ -78,14 +78,14 @@ async function addProperty(formData) {
 
     }
 
-    console.log("Uploaded image URLs:", imageUrls);
+    // console.log("Uploaded image URLs:", imageUrls);
 
 
     propertyData.images = imageUrls;
 
     const newProperty = new Property(propertyData);
     await newProperty.save();
-    console.log("Saving property with data:", propertyData);
+    // console.log("Saving property with data:", propertyData);
 
     revalidatePath("/", "layout");
 

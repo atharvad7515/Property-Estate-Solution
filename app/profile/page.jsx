@@ -25,7 +25,7 @@ const profilePage = async () => {
   // In profilePage, properties are fetched from the database and stored in a variable named properties:
   const properties = propertiesDocs.map(convertToSerializableObject);
 
-  console.log("here are properties ", properties);
+  // console.log("here are properties ", properties);
   return (
     <div>
       Profile Page

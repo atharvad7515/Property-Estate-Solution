@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation';
 
 async function updateProperty(propertyId, formData) {
     await connectDB(); // Ensure DB connection
-    console.log("Property ID:", propertyId); // Check the value of propertyId
+    // console.log("Property ID:", propertyId); // Check the value of propertyId
 
 
     const sessionUser = await getSessionUser();
@@ -18,7 +18,7 @@ async function updateProperty(propertyId, formData) {
     const { userId } = sessionUser;
 
     const existingProperty = await Property.findById(propertyId);
-    console.log("Property ID:", propertyId);
+    // console.log("Property ID:", propertyId);
 
     if (!existingProperty) {
         throw new Error('Property not found');

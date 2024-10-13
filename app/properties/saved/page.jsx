@@ -9,7 +9,7 @@ const savedPropertyPage = async () => {
 
   const { bookmarks } = await User.findById(userId).populate("bookmarks");
 
-  console.log(bookmarks);
+  // console.log(bookmarks);
 
   return (
     <section className="px-4 py-6">
